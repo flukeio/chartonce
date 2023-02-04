@@ -1,71 +1,61 @@
-[![Build Status](https://travis-ci.org/fulldecent/swift5-module-template.svg?branch=master)](https://travis-ci.org/fulldecent/swift5-module-template)
+# ALMOST DONE :walking_woman: :running_woman: :biking_woman:
 
-# Swift 5 Module Template
-Use this template as a starting point for any Swift 5 module that you want other people to include in their projects.
+Thank you for using Swift 5 Module Template. Before you release your awesome project to the world, complete the following steps.
 
-**STATUS: This template is ready and works in production code, compatible with Xcode 13.1 (13A1030d)**
+THIS LIST IS EASY, CHECK IT OFF ONE-BY-ONE BABY! ✔️ ✔️ ✔️
 
-![Swift 5 Module directory layout](https://user-images.githubusercontent.com/382183/66881876-63cca680-ef96-11e9-9dde-ae9d5c35350c.png)
+ - [ ] Open the project in Xcode and add features to Chartonce
+ - [ ] Make sure you are using Swift 5 (Edit > Convert > To Current Swift Syntax…)
+ - [ ] Fix all build errors and warnings, add tests (yes really)
+ - [ ] Add a screenshot or AT LEAST some picture below in this README
+ - [ ] Delete all this crap up here
+ - [ ] Make one release (full steps are in [CONTRIBUTING.md] in case you forget)
 
-## Features
-Your new Swift 5 module will immediately have working, compilable code, and all these features:
+THEN YOU'RE DONE, GO STAR [swift5-module-template](https://github.com/fulldecent/swift5-module-template) FOR UPDATES.
 
--   Ability to be used from Swift Package Manager, CocoaPods and Carthage
--   Clean folder structure
--   MIT license
--   Testing as a standard
--   Turnkey access to GitHub Actions testing
--   Semantic versioning and a CHANGELOG
--   Included example/demo app using SwiftUI
+----
 
-We make the assumption you are using an Xcode project to manage your code.
+# Chartonce
 
-## How to use this
+[![CI Status](http://img.shields.io/travis/flukeio/Chartonce.svg?style=flat)](https://travis-ci.org/flukeio/Chartonce)
+![GitHub tag (latest SemVer)](https://img.shields.io/github/v/tag/flukeio/Chartonce)
+[![License](https://img.shields.io/github/license/flukeio/Chartonce)](LICENSE)
 
-Clone or [download a release](https://github.com/fulldecent/swift5-module-template/releases) and run the  `./configure` program. It will ask you some questions and generate a project.
+<a href="https://placehold.it/400?text=Screen+shot"><img width=200 height=200 src="https://placehold.it/400?text=Screen+shot" alt="Screenshot" /></a>
 
-Or if you have CocoaPods installed, you can alternatively use:
 
-```sh
-pod lib create --verbose --template-url='https://github.com/fulldecent/swift5-module-template.git' MyNewPodName
+## Example
+
+To run the example project, clone this repo, and open iOS Example.xcworkspace from the iOS Example directory.
+
+
+## Requirements
+
+
+## Installation
+
+Add this to your project using Swift Package Manager. In Xcode that is simply: File > Swift Packages > Add Package Dependency... and you're done. Alternative installations options are shown below for legacy projects.
+
+### CocoaPods
+
+If you are already using [CocoaPods](http://cocoapods.org), just add 'Chartonce' to your `Podfile` then run `pod install`.
+
+### Carthage
+
+If you are already using [Carthage](https://github.com/Carthage/Carthage), just add to your `Cartfile`:
+
+```ogdl
+github "flukeio/Chartonce" ~> 0.1
 ```
 
-You then add all the interesting features you want your module to have.
+Then run `carthage update` to build the framework and drag the built `Chartonce`.framework into your Xcode project.
 
-### Using CocoaPods to manage dependencies for your example app
 
-You distribute an example app with your new Swift module to show that it works. You may also decide to add UI tests to your example app and some people like to use testing frameworks for those UI tests. If you would like to use CocoaPods to manage the dependencies of your example app, please see the discussion at https://github.com/fulldecent/swift5-module-template/issues/8.
+## Author
 
-### Automating the configure script
+Hussein Omar
 
-To skip interactive prompts in the `./configure` script, use these environment variables:
 
-| Template variable                | Environment variable                     |
-| -------------------------------- | ---------------------------------------- |
-| `__PROJECT_NAME__`               | `SMT_PROJECT_NAME`                       |
-| `__ORGANIZATION NAME__`          | `SMT_ORGANIZATION_NAME`                  |
-| `com.AN.ORGANIZATION.IDENTIFIER` | `SMT_COM_AN_ORGANIZATION_IDENTIFIER`     |
-| `__AUTHOR NAME__`                | `SMT_AUTHOR_NAME`                        |
-| `__TODAYS_DATE__`                | `SMT_TODAYS_DATE`                        |
-| `__TODAYS_DATE__` (date format)  | `SMT_DATE_FORMAT_STRING` Note: this will ask you for today’s date but it will use this format in the template. |
-| `__TODAYS_YEAR__`                | `SMT_TODAYS_YEAR`                        |
-| `__GITHUB_USERNAME__`            | `SMT_GITHUB_USERNAME`                    |
+## License
 
-For example, you may use: `export SMT_ORGANIZATION_NAME='Awesome Org'` before running `./configure`.
-
-## How it works
-
-```
-┌─────────────┐              ┌─────────────┐              ┌─────────────┐
-│     Use     │              │    Save     │              │Use your own │
-│    Xcode    │─Save recipe─▶│  template   │─./configure─▶│   module    │
-└─────────────┘              └─────────────┘              └─────────────┘
-       ▲              ▲             ▲               ▲            ▲       
-                                                                         
-       │              │             │               │            │       
-        Contributors to this project          End users of this project
-```
-
-## Contributing
-
-See the file [Recipe.md](Recipe.md) for the complete steps (e.g. Open Xcode, make new project, click here, type that, …) of how we made the template.
+Chartonce is available under the MIT license. See [the LICENSE file](LICENSE) for more information.
